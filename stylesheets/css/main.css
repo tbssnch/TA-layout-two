@@ -511,8 +511,13 @@ template {
   flex-basis: 99%;
 }
 
-[class*='col-'] .card {
+[class*='col-'] .card, [class*='col-'] .events .info, .events [class*='col-'] .info {
   flex: 1;
+}
+@media only screen and (max-width: 768px) {
+  [class*='col-'] [class*='col-'] {
+    width: 100%;
+  }
 }
 
 .navigation-logo .logo {
@@ -603,6 +608,10 @@ template {
   color: #666666;
 }
 
+.carousel-img {
+  opacity: 0.3;
+}
+
 .title {
   position: absolute;
   font-family: "Barlow Condensed", sans-serif;
@@ -647,12 +656,11 @@ img {
   text-align: center;
 }
 
-.card {
-  background: none;
+.card, .events .info {
   border: 4px solid #515052;
   padding: 1rem;
 }
-.card .card-text {
+.card .card-text, .events .info .card-text {
   padding: 1rem;
 }
 
@@ -671,6 +679,8 @@ img {
   margin: 0 auto;
 }
 .events .info {
+  border: none;
+  text-align: center;
   padding: 1rem;
 }
 .events .info a {

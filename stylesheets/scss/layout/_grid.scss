@@ -12,4 +12,9 @@
   .card {
     flex: 1;
   }
+  @media only screen and (max-width: 768px) {
+    [class*='col-'] {
+      width: 100%;
+    }
+  }
 }
