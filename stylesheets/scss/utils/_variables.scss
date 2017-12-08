@@ -1,0 +1,13 @@
+$color-white: #f5f5f5;
+$color-gray: #515052;
+$color-black: #000;
+$color-thoughtless: #C02942;
+
+//Lighter Colors
+$lighter-black: lighten($color-black, 40%);
+
+//Darker Colors
+$darker-thoughtless: darken($color-thoughtless, 10%);
+
+// Font Family Variable
+$font-family: 'Barlow Condensed', sans-serif;

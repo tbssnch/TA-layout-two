@@ -1,0 +1,70 @@
+@import "utils/mixins",
+        "base/reset",
+        "layout/grid",
+        "utils/variables",
+        "layout/navigation",
+        "components/carousel",
+        "layout/footer",
+        "layout/hero";
+
+
+* {
+  box-sizing: border-box;
+  font-family: $font-family;
+}
+
+body {
+  background-color: $color-white;
+
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 1200px;
+}
+.posts h1 {
+  font-size: 3em;
+  text-align: center;
+}
+.card {
+  background: none;
+  padding: 1rem;
+  .card-text {
+    padding: 1rem;
+  }
+}
+
+.events {
+  h1 {
+    text-align: center;
+    font-size: 3em;
+  }
+  h3 {
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .events-img {
+    padding-top: 1rem;
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+  }
+  .info {
+    padding: 1rem;
+    a {
+      color: $color-thoughtless;
+      text-decoration: none;
+      transition: color .25s ease-in;
+      &:hover {
+        color: $darker-thoughtless;
+        text-decoration: underline;
+      }
+    }
+  }
+}

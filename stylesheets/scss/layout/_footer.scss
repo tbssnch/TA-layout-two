@@ -1,0 +1,14 @@
+.footer {
+  height: 70px;
+  padding: 1rem 0;
+  text-align: center;
+  a.icon {
+    font-size: 2rem;
+    color: $color-black;
+    margin: 1rem;
+    transition: .25s ease-in;
+    &:hover {
+      color: $lighter-black;
+    }
+  }
+}

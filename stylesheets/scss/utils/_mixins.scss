@@ -1,0 +1,12 @@
+@mixin createCol($col) {
+  @for $i from 1 through $col{
+      $width: ($i / $col) * 100% - 1;
+
+  .col-lg-#{$i} {
+    display: flex;
+    flex-direction: column;
+    width: $width;
+    flex-basis: $width;
+    }
+  }
+}

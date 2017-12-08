@@ -1,0 +1,17 @@
+.title {
+  font-family: $font-family;
+  text-align: center;
+  .ta-logo {
+    width: 15%;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  .about {
+    padding: 0 3rem;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 1.3em;
+    font-weight: 200;
+  }
+}
