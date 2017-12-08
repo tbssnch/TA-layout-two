@@ -1,3 +1,5 @@
+@import "utils/variables";
+
 @mixin createCol($col) {
   @for $i from 1 through $col{
       $width: ($i / $col) * 100% - 1;
@@ -8,5 +10,25 @@
     width: $width;
     flex-basis: $width;
     }
+  }
+}
+
+@mixin tabCol($col) {
+  @for $i from 1 through $col{
+      $width-tab: $tablet-width;
+
+  .col-lg-#{$i} {
+    display: flex;
+    flex-direction: column;
+    width: $tablet-width;
+    flex-basis: $tablet-width;
+    }
+  }
+}
+
+
+@mixin tablet {
+  @media (max-width: #{$tablet-width}) {
+    @content;
   }
 }

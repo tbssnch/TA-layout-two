@@ -39,7 +39,12 @@ img {
     padding: 1rem;
   }
 }
-
+@include tablet {
+  .card {
+    margin: 0 auto;
+    border: none;
+  }
+}
 .events {
   h1 {
     text-align: center;

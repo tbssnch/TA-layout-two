@@ -8,13 +8,27 @@
   @include createCol(12);
 }
 
-[class*='col-'] {
-  .card {
-    flex: 1;
-  }
-  @media only screen and (max-width: 768px) {
-    [class*='col-'] {
-      width: 100%;
-    }
+
+@include tablet {
+  .row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    @include tabCol(12);
   }
 }
+// [class*='col-'] {
+//   .card {
+//     flex: 1;
+//   }
+//   @media only screen and (max-width: 768px) {
+//     [class*='col-'] {
+//       width: 100%;
+//     }
+//   }
+// }
+
+
+// [class*='col-1'] {
+//   width: 100%;
+// }

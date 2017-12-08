@@ -511,15 +511,85 @@ template {
   flex-basis: 99%;
 }
 
-[class*='col-'] .card, [class*='col-'] .events .info, .events [class*='col-'] .info {
-  flex: 1;
-}
-@media only screen and (max-width: 768px) {
-  [class*='col-'] [class*='col-'] {
-    width: 100%;
+@media (max-width: 768px) {
+  .row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .row .col-lg-1 {
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+    flex-basis: 768px;
+  }
+  .row .col-lg-2 {
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+    flex-basis: 768px;
+  }
+  .row .col-lg-3 {
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+    flex-basis: 768px;
+  }
+  .row .col-lg-4 {
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+    flex-basis: 768px;
+  }
+  .row .col-lg-5 {
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+    flex-basis: 768px;
+  }
+  .row .col-lg-6 {
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+    flex-basis: 768px;
+  }
+  .row .col-lg-7 {
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+    flex-basis: 768px;
+  }
+  .row .col-lg-8 {
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+    flex-basis: 768px;
+  }
+  .row .col-lg-9 {
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+    flex-basis: 768px;
+  }
+  .row .col-lg-10 {
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+    flex-basis: 768px;
+  }
+  .row .col-lg-11 {
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+    flex-basis: 768px;
+  }
+  .row .col-lg-12 {
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+    flex-basis: 768px;
   }
 }
-
 .navigation-logo .logo {
   margin: 0 auto;
   padding-top: 50px;
@@ -664,6 +734,12 @@ img {
   padding: 1rem;
 }
 
+@media (max-width: 768px) {
+  .card, .events .info {
+    margin: 0 auto;
+    border: none;
+  }
+}
 .events h1 {
   text-align: center;
   font-size: 3em;
