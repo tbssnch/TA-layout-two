@@ -1,16 +1,21 @@
+.navigation-logo {
+  .logo {
+    margin: 0 auto;
+    padding-top: 50px;
+    flex-basis: 15%;
+    width: 15%;
+    .nav-logo {
+      width: 120px;
+      margin-left: 1rem;
+    }
+  }
+}
+
 .navigation {
   display: flex;
   justify-content: space-around;
   padding-top: 1rem;
   height: 120px;
-  .logo {
-    flex-basis: 15%;
-    width: 15%;
-    .nav-logo {
-      width: 90px;
-      margin-left: 1rem;
-    }
-  }
   .links {
     display: flex;
     justify-content: center;
