@@ -13,13 +13,12 @@
 
 .navigation {
   display: flex;
-  justify-content: space-around;
   padding-top: 1rem;
   height: 120px;
+  justify-content: center;
+  align-items: center;
   .links {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-basis: 60%;
     a {
       font-family: $font-family;
