@@ -26,7 +26,12 @@ img {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  width: 1200px;
+}
+.posts {
+  margin: 0 auto;
+  .card {
+    height: 125px;
+  }
 }
 .posts h1 {
   font-size: 3em;
@@ -39,13 +44,16 @@ img {
     padding: 1rem;
   }
 }
-@include tablet {
-  .card {
-    margin: 0 auto;
-    border: none;
-  }
-}
+// @include tablet {
+//   .card {
+//     margin: 0 auto;
+//     border: none;
+//   }
+// }
 .events {
+  @media #{$tablet-width} {
+    display: flex;
+  }
   h1 {
     text-align: center;
     font-size: 3em;

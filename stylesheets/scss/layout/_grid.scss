@@ -9,14 +9,14 @@
 }
 
 
-@include tablet {
-  .row {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    @include tabCol(12);
-  }
-}
+// @include tablet {
+//   .row {
+//     display: flex;
+//     justify-content: space-around;
+//     flex-wrap: wrap;
+//     @include tabCol(12);
+//   }
+// }
 // [class*='col-'] {
 //   .card {
 //     flex: 1;

@@ -2,7 +2,7 @@ $color-white: #f5f5f5;
 $color-gray: #515052;
 $color-black: #000;
 $color-thoughtless: #C02942;
-$color-green: #79AF9F;
+$color-green: #63A28F;
 
 //Lighter Colors
 $lighter-black: lighten($color-black, 40%);
@@ -14,4 +14,6 @@ $darker-thoughtless: darken($color-thoughtless, 10%);
 $font-family: 'Barlow Condensed', sans-serif;
 
 // Sizes
-$tablet-width: 768px;
+$tablet-width: 'only screen and (max-width:768px)';
+$mobile-width: 'only screen and (max-width: 375px)';
+$hero-display: 'only screen and (max-width: 1000px)';

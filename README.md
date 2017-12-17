@@ -20,4 +20,6 @@ It was good to have something to work on that both of us are excited about. We p
 | Import/Partials | We used import on every layout section of our project. This eliminated the need to link multiple http requests for styling. |
 | Operators | We used math operators when generating the function for our column section. |
 
-Today I am hoping to use extend/inheritance for the second layout. This seems like a beneficial took in keeping code a lot more dry, so I am planning on getting a better understanding of how this works. 
+Today I am hoping to use extend/inheritance for the second layout. This seems like a beneficial took in keeping code a lot more dry, so I am planning on getting a better understanding of how this works.
+
+I plan on focusing to make the hero image respond accordingly for mobile first. Second, I would like to make the navigation bar disappear into a hamburger menu with the 107ist logo displayed on the opposite side of where the menu is. The rest of the page will sit in a single column. 

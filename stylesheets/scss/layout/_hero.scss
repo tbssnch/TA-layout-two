@@ -1,6 +1,17 @@
 .carousel-img {
   opacity: 0.3;
 }
+.carousel .slide {
+display: show;
+}
+.carousel .slide {
+  @media #{$mobile-width} {
+    display: none;
+ }
+ @media #{$hero-display} {
+   display: none;
+ }
+}
 
 .title {
   position: absolute;
