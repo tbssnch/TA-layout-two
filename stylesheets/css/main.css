@@ -471,41 +471,49 @@ template {
     margin-left: 1rem; }
 
 .navigation {
+  margin: 0 auto;
   display: flex;
   padding-top: 1rem;
-  height: 120px;
   justify-content: center;
   align-items: center; }
   .navigation .links {
     display: flex;
-    flex-basis: 60%; }
+    margin: 0 auto; }
     .navigation .links a {
       font-family: "Barlow Condensed", sans-serif;
       text-decoration: none;
       padding: 1rem;
       color: #515052; }
-  .navigation .search {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-basis: 20%; }
-    .navigation .search .search-bar {
-      border: 1px solid #515052;
-      background: none;
-      font-family: "Barlow Condensed", sans-serif;
-      height: 30px;
-      width: 220px;
-      padding: 4px; }
-    .navigation .search .search-btn {
-      background: #515052;
-      color: #f5f5f5;
-      border: 1px solid #515052;
-      border-radius: 8px;
-      font-family: "Barlow Condensed", sans-serif;
-      padding: 4px;
-      height: 30px;
-      width: 40px; }
+  @media only screen and (max-width: 768px) {
+    .navigation .links {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
 
+.search {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px; }
+  .search .search-bar {
+    border: 1px solid #515052;
+    background: none;
+    font-family: "Barlow Condensed", sans-serif;
+    height: 30px;
+    width: 200px;
+    padding-right: 4px; }
+  .search .search-btn {
+    background: #515052;
+    color: #f5f5f5;
+    border: 1px solid #515052;
+    border-radius: 8px;
+    font-family: "Barlow Condensed", sans-serif;
+    padding: 4px;
+    height: 30px;
+    width: 40px; }
+
+@media only screen and (max-width: 768px) {
+  .search {
+    justify-content: center; } }
 .carousel {
   width: 100%;
   height: 660px;
@@ -548,7 +556,6 @@ template {
     display: none; } }
 
 .title {
-  position: absolute;
   font-family: "Barlow Condensed", sans-serif;
   text-align: center; }
   .title .ta-logo {
@@ -573,8 +580,6 @@ img {
   max-width: 100%; }
 
 .container {
-  display: flex;
-  flex-direction: column;
   margin: 0 auto; }
 
 .posts {
@@ -583,7 +588,9 @@ img {
     height: 125px; }
     @media only screen and (max-width: 768px) {
       .posts .card, .posts .events .info, .events .posts .info {
-        width: 200px; } }
+        align-self: center;
+        width: 400px;
+        margin: 20px; } }
 
 .posts h1 {
   font-size: 3em;
