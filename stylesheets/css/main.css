@@ -455,6 +455,12 @@ template {
     width: 99%;
     flex-basis: 99%; }
 
+@media only screen and (max-width: 768px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
 .navigation-logo .logo {
   margin: 0 auto;
   padding-top: 50px;
@@ -575,6 +581,9 @@ img {
   margin: 0 auto; }
   .posts .card, .posts .events .info, .events .posts .info {
     height: 125px; }
+    @media only screen and (max-width: 768px) {
+      .posts .card, .posts .events .info, .events .posts .info {
+        width: 200px; } }
 
 .posts h1 {
   font-size: 3em;
@@ -586,9 +595,6 @@ img {
   .card .card-text, .events .info .card-text {
     padding: 1rem; }
 
-@media only screen and (max-width: 768px) {
-  .events {
-    display: flex; } }
 .events h1 {
   text-align: center;
   font-size: 3em; }

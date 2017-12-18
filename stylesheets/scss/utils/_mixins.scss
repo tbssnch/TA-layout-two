@@ -15,7 +15,7 @@
 
 @mixin tabCol($col) {
   @for $i from 1 through $col{
-      $width-tab: $tablet-width;
+      $width-tab: ($i / $col) * 100% -1;
 
   .col-lg-#{$i} {
     display: flex;
@@ -27,8 +27,8 @@
 }
 
 
-// @mixin tablet {
-//   @media #{$tablet-width} {
-//     @content;
-//   }
-// }
+@mixin tablet {
+  @media #{$tablet-width} {
+    @content;
+  }
+}

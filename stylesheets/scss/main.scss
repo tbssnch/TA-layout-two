@@ -31,8 +31,12 @@ img {
   margin: 0 auto;
   .card {
     height: 125px;
+  @media only screen and (max-width:768px) {
+    width: 200px;
+    }
   }
 }
+
 .posts h1 {
   font-size: 3em;
   text-align: center;
@@ -51,9 +55,6 @@ img {
 //   }
 // }
 .events {
-  @media #{$tablet-width} {
-    display: flex;
-  }
   h1 {
     text-align: center;
     font-size: 3em;
