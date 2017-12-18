@@ -3,11 +3,9 @@
 }
 
 .carousel-img {
-  opacity: 0.3;
+  opacity: 0.8;
 }
-.carousel .slide {
-display: show;
-}
+
 .carousel .slide {
   @media #{$mobile-width} {
     display: none;
