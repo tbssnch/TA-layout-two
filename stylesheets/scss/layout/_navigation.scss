@@ -1,15 +1,16 @@
-.navigation-logo {
-  .logo {
-    margin: 0 auto;
+.logo {
+    display: flex;
+    justify-content: center;
     padding-top: 50px;
-    flex-basis: 15%;
-    width: 15%;
+    padding-bottom: 20px;
+    // flex-basis: 15%;
     .nav-logo {
-      width: 120px;
-      margin-left: 1rem;
+      width: 20%;
+      height: 20%;
+      object-fit: contain;
     }
   }
-}
+
 
 .navigation {
   margin: 0 auto;
